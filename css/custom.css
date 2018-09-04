@@ -1,0 +1,58 @@
+
+header {
+  background-color: #563d7c;
+  height: 68px;
+}
+
+.social-list{
+  float: left;
+
+}
+
+.fa{
+  font-size: 20px;
+  color: white;
+  margin: 1em;
+}
+
+.nav-link{
+  color: white;
+  
+}
+
+.jumbotron{
+  background-color: rgb(121, 101, 158); 
+  text-align: center;
+  color: white;
+}
+h2 {
+  text-align: center;
+  background-color: rgb(121, 101, 158);
+  color: white;
+}
+.card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0rem;
+}
+
+.card-title{
+  text-align: center;
+}
+
+ul.skill-set {
+  list-style: none;
+  padding: 0;
+  
+}
+.skill-set li {
+  padding-left: 1.3em;  
+}
+.skill-set li:before {
+  content: "\f00c"; 
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -0.1em; /* same as padding-left set on li */
+  width: 1.6em; /* same as padding-left set on li */
+}

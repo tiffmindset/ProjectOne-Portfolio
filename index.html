@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="MyfirstJS.js"></script>
+</head>
+<body>
+    <header class="header">
+
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <ul class="social-list list-inline">
+                    <a href="#" class="fa fa-github-square"></a>
+                    <a href="#" class="fa fa-linkedin-square"></a>
+                    <a href="#" class="fa fa-medium"></a>
+                    <a href="#" class="fa fa-facebook-square"></a>
+                    <a href="#" class="fa fa-twitter-square"></a>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="jumbotron">
+            <h1>Welcome to Tiffany's Website!</h1>
+            <p>Enjoy Coding!</p>
+        </div>
+
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Technical Skills</h2>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="container">
+                <div class="card-deck">
+
+                    <div class="card">
+                        <i class="fa fa-cubes" style="font-size:38px;color:rgb(121, 101, 158); text-align: center;"></i>
+                        <div class="card-body">
+                            <h4 class="card-title">Frontend</h4>
+                            <ul class="skill-set">
+                                <li>Angular</li>
+                                <li>Javascript</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fa fa-database" style="font-size:38px;color:rgb(121, 101, 158); text-align: center;"></i>
+                        <div class="card-body">
+                            <h4 class="card-title">Bankend</h4>
+                            <ul class="skill-set">
+                                <li>C/C++</li>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>Restful API</li>
+                                <li>PostgresSQL/MySQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fa fa-desktop" style="font-size:38px;color:rgb(121, 101, 158); text-align: center;"></i>
+                        <div class="card-body">
+                            <h4 class="card-title">Others</h4>
+                            <ul class="skill-set">
+                                <li>Android</li>
+                                <li>Kolin</li>
+                                <li>Swift</li>
+                                <li>IOS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <!-- Section2 Projects -->
+        <section class="section" id="projects">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Projects</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                 <!-- project1 -->
+                <div class="row">
+                    <div class="col-sm-12" style="background-color:#eeedf1">
+                        <h3> Lotto Max Generator </h3>
+                        <button class="btn-primary" onclick="updateLottoContent()">Get lucky numbers</button>
+                        <div id="lotto-numbers"></div>
+                        <br>
+                        <div class="container">
+                            <!-- <table style="width:100%">
+                            <tr>
+                              <td id="cell0">na</td>
+                              <td id="cell1">na</td>
+                              <td id="cell2">na</td>
+                              <td id="cell3">na</td>
+                              <td id="cell4">na</td>
+                              <td id="cell5">na</td>
+                              <td id="cell6">na</td>
+                            </tr>
+                        </table> -->
+                            <table>
+                                <tr id="lotto-row">
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- project2 -->
+                    <div class="col-sm-12" style="background-color:#eeedf1;">
+                        <h3>Welcome to the Number Guess Game! </h3>
+                        <p>The number is between 1 and 100 and you have 10 chances to guess it.</p>
+                        <button class="btn-primary" onclick="setRandom()">Generate Random Number</button>
+                        <br>
+                        <br>
+                        <p>Please enter your guess:</p>
+                        <input type="number" id="myNumber" placeholder="enter a number here" onkeyup="guessNum()">
+                        <br>
+                        <span id="result"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        
+        <!-- Section3 Pro -->
+
+        <section class="section" id="Portfolio">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Portfolio</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="section" id="Portfolio">
+        <div class="jumbotron">
+            <h1>Contact</h1>
+            <p>“If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.”
+
+                    ― Martin Luther King Jr.</p>
+        </div>
+    </section>
+
+</body>
+
+
+</html>
